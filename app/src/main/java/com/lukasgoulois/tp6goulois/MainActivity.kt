@@ -1,5 +1,6 @@
 package com.lukasgoulois.tp6goulois
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -72,6 +73,18 @@ class MainActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Veuillez remplir tous les champs", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        // Listener Modifier
+        binding.buttonModifier.setOnClickListener {
+            val i = Intent(this, EditActivity::class.java)
+            startActivity(i)
+        }
+
+        // Listener Supprimer
+        binding.buttonSupprimer.setOnClickListener {
+            val i = Intent(this, RemoveActivity::class.java)
+            startActivity(i)
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
