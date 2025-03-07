@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TP6Goulois</string>
+
+    <string name="labelNbDepts">Nb. Depts</string>
+
+    <string name="hintNom">Nom</string>
+    <string name="hintChef">Chef</string>
+    <string name="hintTechnicien">Technicien</string>
+
+    <string name="buttonAfficher">Afficher</string>
+    <string name="buttonAjouter">Ajouter</string>
+    <string name="buttonSupprimer">Supprimer</string>
+    <string name="buttonModifier">Modifier</string>
+</resources>

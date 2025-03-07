@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewLabelNbDepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="43dp"
+        android:text="@string/labelNbDepts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewVarNbDepts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/textViewLabelNbDepts"
+        app:layout_constraintTop_toTopOf="@+id/textViewLabelNbDepts" />
+
+    <Button
+        android:id="@+id/buttonAfficher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/buttonAfficher"
+        app:layout_constraintStart_toEndOf="@+id/textViewVarNbDepts"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNom"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/hintNom"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/textViewLabelNbDepts"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLabelNbDepts" />
+
+    <EditText
+        android:id="@+id/editTextChef"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/hintChef"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editTextNom"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNom" />
+
+    <EditText
+        android:id="@+id/editTextTechnicien"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/hintTechnicien"
+        app:layout_constraintStart_toStartOf="@+id/editTextNom"
+        app:layout_constraintTop_toBottomOf="@+id/editTextChef" />
+
+    <Button
+        android:id="@+id/buttonAjouter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/buttonAjouter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTechnicien" />
+
+    <Button
+        android:id="@+id/buttonModifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/buttonModifier"
+        app:layout_constraintStart_toEndOf="@+id/buttonAjouter"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTechnicien" />
+
+    <Button
+        android:id="@+id/buttonSupprimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/buttonSupprimer"
+        app:layout_constraintStart_toEndOf="@+id/buttonModifier"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTechnicien" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
