@@ -11,4 +11,5 @@
     <string name="buttonAjouter">Ajouter</string>
     <string name="buttonSupprimer">Supprimer</string>
     <string name="buttonModifier">Modifier</string>
+    <string name="buttonValider">Valider</string>
 </resources>

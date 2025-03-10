@@ -5,10 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditActivity">
+    tools:context=".RemoveActivity">
 
     <Spinner
-        android:id="@+id/spinnerList"
+        android:id="@+id/spinnerListRem"
         android:layout_width="336dp"
         android:layout_height="55dp"
         android:layout_marginStart="36dp"
@@ -16,49 +16,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextEditNom"
-        android:layout_width="225dp"
-        android:layout_height="60dp"
+    <TextView
+        android:id="@+id/textViewRemNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
         android:layout_marginTop="24dp"
         android:ems="10"
-        android:inputType="text"
         android:hint="@string/hintNom"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerList" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerListRem" />
 
-    <EditText
-        android:id="@+id/editTextEditChef"
-        android:layout_width="225dp"
-        android:layout_height="60dp"
+    <TextView
+        android:id="@+id/textViewRemChef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
         android:layout_marginTop="24dp"
         android:ems="10"
-        android:inputType="text"
         android:hint="@string/hintChef"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEditNom" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewRemNom" />
 
-    <EditText
-        android:id="@+id/editTextEditTechnicien"
-        android:layout_width="225dp"
-        android:layout_height="60dp"
+    <TextView
+        android:id="@+id/textViewRemTechnicien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="92dp"
         android:layout_marginTop="24dp"
         android:ems="10"
-        android:inputType="text"
         android:hint="@string/hintTechnicien"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEditChef" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewRemChef" />
 
     <Button
-        android:id="@+id/buttonValider"
+        android:id="@+id/buttonRemValider"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
         android:layout_marginTop="32dp"
         android:text="@string/buttonValider"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEditTechnicien" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewRemTechnicien" />
 </androidx.constraintlayout.widget.ConstraintLayout>

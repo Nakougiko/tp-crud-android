@@ -110,4 +110,9 @@ class MainActivity : AppCompatActivity() {
     private fun refreshNbDepts() {
         binding.textViewVarNbDepts.text = "${deptDAO.nbDepts()}"
     }
+
+    override fun onRestart() {
+        super.onRestart()
+        refreshNbDepts()
+    }
 }

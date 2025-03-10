@@ -48,7 +48,7 @@ class DeptDAO {
 
     // Permet de sélectionner un departement via son id
     fun getDept(id: Int) : Cursor {
-        return db.query(dbHelper.table, null, "${dbHelper.colId} = ${id}", arrayOf(id.toString()), null, null, null)
+        return db.query(dbHelper.table, null, "${dbHelper.colId} = ?", arrayOf(id.toString()), null, null, null)
     }
 
     // permet de mettre a jour un département via son id
